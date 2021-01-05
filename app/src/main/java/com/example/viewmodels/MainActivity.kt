@@ -10,15 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var viewModel=ViewModelProvider(this).get(MainActivityViewModel::class.java)
-        tvCounter.text=viewModel.count.toString()
-
-        btnCounter.setOnClickListener{
-
-        viewModel.addNumber()
-         tvCounter.text=viewModel.count.toString()
-
-        }
 
 
     }
