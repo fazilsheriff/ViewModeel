@@ -9,7 +9,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    var viewModel=ViewModelProvider(this).get(MainActivityViewModel::class.java)
+
+        var viewModel=ViewModelProvider(this).get(MainActivityViewModel::class.java)
         tvCounter.text=viewModel.count.toString()
 
         btnCounter.setOnClickListener{
